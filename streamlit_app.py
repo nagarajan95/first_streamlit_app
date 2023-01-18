@@ -40,10 +40,6 @@ try:
   else:              
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
-    #streamlit.write('The user entered ', fruit_choice)
-    
-    # write your own comment - what does this do?
-    streamlit.dataframe(fruityvice_normalized)
 
 except URLError as e:
   streamlit.error()
